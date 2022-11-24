@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> 
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+   <link rel="stylesheet" href="style.css">
+
+   <title>Frontend Mentor | Expenses chart component</title>
+   
+   <script src="script.js" defer></script>
 </head>
 <body>
 
-  My balance
-  $921.48
+   <div class="wrapper">
+      <header>
+         <div class="header-one">
+            <p class="text">My balance</p>
+            <p class="balance">$921.48</p>
+         </div>
+         <div class="header-two">
+            <div class="logo">
+               <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+            </div>
+         </div>
+      </header>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <main>
+         <h1>Spending- last 7 days</h1>
+         <!-- TODO: chart  -->
+         <div class="chart"></div>
+         <div class="divider"></div>
+         <div class="main-footer">
+            <div class="main-one">
+               <p class="text-main">Total this month</p>
+               <p class="month-total">$478.33</p>
+            </div>
+            <div class="main-two">
+               <div class="growth">+2.4%</div>
+               <p class="text-main">from last month</p>
+            </div>
+         </div>
+      </main>
+   </div>
 </body>
 </html>

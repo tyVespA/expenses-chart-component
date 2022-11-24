@@ -1,0 +1,145 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+ 
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* === END OF CSS RESET === */
+
+:root {
+   /* semantic naming */
+   --primary: hsl(10, 79%, 65%);
+   --primary-active: hsl(186, 34%, 60%);
+   --neutral-900: hsl(25, 47%, 15%);
+   --neutral-500: hsl(28, 10%, 53%);
+   --neutral-200: hsl(27, 66%, 92%);
+   --neutral-50: hsl(33, 100%, 98%);
+    
+   /* contextual naming */
+   --text-dark: var(--neutral-900);
+   --text-bright: var(--neutral-50);
+   --text-medium: var(--neutral-500);
+   --surface: var(--primary);
+   --surface-active: var(--primary-active);
+   --background: var(--neutral-200);
+}
+
+body {
+   font-family: 'DM Sans', sans-serif;
+   background-color: var(--background);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   min-width: 400px;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--surface);
+   color: var(--text-bright);
+
+   padding: 25px 20px;
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
+
+.balance {
+   margin-top: 5px;
+   font-weight: 700;
+   font-size: 1.6rem;
+}
+
+main {
+   background-color: var(--text-bright);
+   color: var(--text-dark);
+   padding: 30px 20px;
+   border-radius: 10px;
+
+
+}
+
+h1 {
+   font-size: 1.6rem;
+}
+
+.divider {
+   height: 2px;
+   background-color: var(--background);
+   margin: 20px 0;
+}
+
+.main-footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+main .text-main {
+   color: var(--text-medium);
+}
+
+.month-total {
+   font-size: 1.7rem;
+   font-weight: 700;
+}
+
+.main-two {
+   text-align: end;
+}
+
+.growth {
+   font-weight: 700;
+}
